@@ -1,0 +1,32 @@
+version: "3"
+
+tasks:
+    build:
+        desc: "Build"
+        cmds:
+            - bun run build
+
+    typecheck:
+        desc: "Typecheck"
+        cmds:
+            - bun run typecheck
+
+    lint:
+        desc: "Lint"
+        cmds:
+            - bun run lint
+
+    format:check:
+        desc: "Check formatting"
+        cmds:
+            - bun run format:check
+
+    format:
+        desc: "Format files"
+        cmds:
+            - bun run format
+
+    ci:
+        desc: "Run all checks"
+        cmds:
+            - bun run ci
